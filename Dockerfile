@@ -13,4 +13,5 @@ RUN apk update && \
 ADD ./conf/named.conf /etc/bind/
 
 EXPOSE 53/udp 53/tcp 953/tcp
+
 CMD ["named", "-c", "/etc/bind/named.conf", "-g", "-u", "named"]
