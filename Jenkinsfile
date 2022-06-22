@@ -26,7 +26,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building image..'
-                sh "docker buildx build --platform linux/amd64,linux/arm64,linux/386,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6 --pull --no-cache --push -t ${DOCKER_REPOSITORY_NAME}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} ."
+                sh "docker buildx build --platform linux/amd64,linux/arm64,linux/386,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6 --pull --no-cache --push -t ${DOCKER_REPOSITORY_NAME}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} ."
             }
         }
     }
