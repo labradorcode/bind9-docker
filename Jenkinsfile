@@ -6,7 +6,7 @@ pipeline {
         DOCKER_REPOSITORY_NAME = "labradorcode"
         DOCKER_CREDENTIALS = credentials('github-labradorcode-credentials')
         DOCKER_IMAGE_NAME = 'bind9'
-        DOCKER_IMAGE_TAG = '9.16.29-r0'
+        DOCKER_IMAGE_TAG = '9.18.3-r2'
     }
     stages {
         stage('Init') {
