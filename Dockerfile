@@ -1,5 +1,5 @@
 ARG ALPINE_VERSION='edge'
-ARG BIND_VERSION='=9.16.29-r0'
+ARG BIND_VERSION='=9.18.3.r2'
 
 FROM alpine:${ALPINE_VERSION}
 LABEL org.opencontainers.image.authors="ddgorczynski@gmail.com"
