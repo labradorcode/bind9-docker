@@ -39,3 +39,22 @@ jobs:
             labradorcode/bind9:latest
             labradorcode/bind9:9.18.3-r2
 
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Synk to check latest tag for labrarorcode/bind9
+      uses: snyk/actions/docker@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_IO_TOKEN }}
+      with:
+        image: labradorcode/bind9:latest
+
+    - name: Run Synk to check latest tag for labrarorcode/9.18.3-r2
+      uses: snyk/actions/docker@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_IO_TOKEN }}
+      with:
+        image: labradorcode/bind9:9.18.3-r2
+        
+
+
