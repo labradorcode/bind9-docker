@@ -38,8 +38,10 @@ jobs:
           tags: |
             labradorcode/bind9:latest
             labradorcode/bind9:9.18.3-r2
+            
 
   security:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Run Synk to check latest tag for labrarorcode/bind9
