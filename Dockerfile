@@ -18,3 +18,5 @@ ADD ./conf/named.conf /etc/bind/
 EXPOSE 53/udp 53/tcp 953/tcp
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+HEALTHCHECK --timeout=10s CMD dig @127.0.0.1 ns.localhost
+
