@@ -1,3 +1,5 @@
+[![ci](https://github.com/labradorcode/bind9-docker/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/labradorcode/bind9-docker/actions/workflows/docker-image.yml)
+
 **Specs**
 Base image Alpine Edge
 
