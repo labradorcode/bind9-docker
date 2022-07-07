@@ -5,7 +5,8 @@
 | Version | Supported          |
 | ------- | ------------------ |
 | latest   | :white_check_mark: |
-| 9.18.3-r2   | :white_check_mark:                |
+| 9.18.4-r2 | :white_check_mark: |
+| 9.18.3-r2   | :heavy_exclamation_mark: |
 
 ## Reporting a Vulnerability
 Alpine https://lists.alpinelinux.org/lists/~alpine
