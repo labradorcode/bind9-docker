@@ -7,7 +7,7 @@ Base image Alpine Edge
 
 **Usage**
 
-`docker run -d --name bind9 -p 5353:53/udp labradorcode/bind9:9.18.3-r2`
+`docker run -d --name bind9 -p 5353:53/udp labradorcode/bind9:9.18.4-r2`
 
 | Parameter | Description |
 | --------- | ----------- |

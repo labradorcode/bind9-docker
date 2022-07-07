@@ -37,5 +37,5 @@ jobs:
           push: true
           tags: |
             labradorcode/bind9:latest
-            labradorcode/bind9:9.18.3-r2
+            labradorcode/bind9:9.18.4-r2
 
